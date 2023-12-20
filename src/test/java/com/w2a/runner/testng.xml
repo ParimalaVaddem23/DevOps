@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel Test Suite" parallel="classes" thread-count="3">
-<!--<suite name="Test automtion regression suite">-->
+<!--<suite name="Parallel Test Suite" parallel="classes" thread-count="3">-->
+<suite name="Test automtion regression suite">
     <listeners>
         <listener class-name="com.w2a.testbase.BaseClass"></listener>
     </listeners>
