@@ -15,6 +15,7 @@ public class BrowserManager {
         if (browserName.equalsIgnoreCase("chrome")) {
             //steup chrome browser
             //Add options for --headed or --headless browser launch
+            System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
 
