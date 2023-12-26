@@ -18,12 +18,13 @@ public class BrowserManager {
             //Add options for --headed or --headless browser launch
             //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.setBinary("/usr/bin/chromedriver");
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--disable-setuid-sandbox");
             chromeOptions.addArguments("--disable-dev-shm-usage");
 
-            WebDriverManager.chromedriver().setup();
+            //WebDriverManager.chromedriver().setup();
             //initialize driver for chrome
             System.out.println("initialize driver for chrome");
             driver = new ChromeDriver(chromeOptions);
