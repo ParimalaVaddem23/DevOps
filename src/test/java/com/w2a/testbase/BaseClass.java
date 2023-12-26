@@ -28,6 +28,7 @@ public class BaseClass implements ITestListener {
         BrowserManager.browserSetup(browser);
         WebDriver driver = getDriver();
         System.out.println("Before Test Thread ID: "+Thread.currentThread().getId());
+        System.out.println("launching chrome browser");
         driver.get(ConfigReader.getProperty("baseurl"));
     }
 
