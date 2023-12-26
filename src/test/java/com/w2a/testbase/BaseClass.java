@@ -43,7 +43,7 @@ public class BaseClass implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         // not implemented
-        report = new ExtentReports(System.getProperty("user.dir")+"/ExtentReportResults.html");
+        report = new ExtentReports(System.getProperty("user.dir")+"/target/ExtentReportResults.html");
         extent_reports.set(report);
     }
 
